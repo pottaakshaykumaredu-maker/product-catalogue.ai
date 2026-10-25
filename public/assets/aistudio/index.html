@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Store - Online Shopping</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main Header & Navigation -->
+  <header class="site-header">
+    <a href="index.html" class="brand-link">🛍️ Product Store</a>
+    <form class="search-form" onsubmit="handleSearchSubmit(event)">
+      <input type="text" id="searchInput" placeholder="Search for products, brands and more..." required>
+      <button type="submit">Search</button>
+    </form>
+    <nav class="nav-links">
+      <a href="catalogue.html">Catalogue</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <span id="userAccountSection"><a href="login.html">Login</a></span>
+      <a href="cart.html" class="cart-btn">🛒 Cart <span id="cartBadge" class="badge">0</span></a>
+    </nav>
+  </header>
+
+  <!-- Hero Promotional Banner -->
+  <main class="page-container">
+    <section class="hero-banner">
+      <span id="slideBadge" style="background:#ffe500; color:#1e293b; padding:4px 10px; border-radius:4px; font-weight:700; font-size:12px;">MEGA SALE</span>
+      <h1 id="slideTitle" style="margin-top:12px;">Big Savings on Top Electronics & Fashion</h1>
+      <p id="slideSubtitle">Get up to 60% discount with free express delivery on all orders.</p>
+      <a href="catalogue.html" class="btn-hero">Explore All Products ➜</a>
+    </section>
+
+    <!-- Top Deals Section -->
+    <section>
+      <div class="section-title">
+        <h2>🔥 Top Deals of the Day</h2>
+        <a href="catalogue.html" style="font-size:14px; color:#2874f0; font-weight:600;">View All ➜</a>
+      </div>
+      <div id="homeDealsGrid" class="product-grid"></div>
+    </section>
+
+    <!-- Featured Electronics Section -->
+    <section>
+      <div class="section-title">
+        <h2>⚡ Best in Electronics</h2>
+        <a href="catalogue.html?cat=electronics" style="font-size:14px; color:#2874f0; font-weight:600;">View All ➜</a>
+      </div>
+      <div id="homeElectronicsGrid" class="product-grid"></div>
+    </section>
+  </main>
+
+  <!-- Toast Notification & Footer -->
+  <div id="toastNotification" class="toast-msg"></div>
+  <footer class="site-footer">
+    <p>© 2026 Product Store E-Commerce. Built with simple and clean HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

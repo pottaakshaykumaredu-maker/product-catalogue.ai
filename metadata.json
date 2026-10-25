@@ -1,0 +1,6 @@
+{
+  "name": "Product Store - Product Catalogue",
+  "description": "Product Store - Complete responsive multi-page e-commerce product catalogue website for EWP Lab External examination.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

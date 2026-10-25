@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Product Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <a href="index.html" class="brand-link">🛍️ Product Store</a>
+    <form class="search-form" onsubmit="handleSearchSubmit(event)">
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <button type="submit">Search</button>
+    </form>
+    <nav class="nav-links">
+      <a href="catalogue.html">Catalogue</a>
+      <a href="about.html" style="text-decoration:underline;">About</a>
+      <a href="contact.html">Contact</a>
+      <span id="userAccountSection"><a href="login.html">Login</a></span>
+      <a href="cart.html" class="cart-btn">🛒 Cart <span id="cartBadge" class="badge">0</span></a>
+    </nav>
+  </header>
+
+  <!-- About Content Section -->
+  <main class="page-container">
+    <div class="form-card" style="max-width:720px; line-height:1.7;">
+      <h1 style="font-size:24px; margin-bottom:12px; color:#0f172a;">About Product Store</h1>
+      <p style="margin-bottom:16px; color:#475569;">Welcome to <strong>Product Store</strong>, your one-stop destination for quality gadgets, trendy clothing, home essentials, and academic handbooks.</p>
+      
+      <h3 style="font-size:16px; margin:16px 0 6px; color:#1e293b;">Our Mission</h3>
+      <p style="color:#475569; margin-bottom:14px;">We believe online shopping should be lightning fast, dependable, and delightfully affordable for every customer.</p>
+      
+      <h3 style="font-size:16px; margin:16px 0 6px; color:#1e293b;">Why Shop With Us?</h3>
+      <ul style="padding-left:20px; color:#475569; margin-bottom:16px;">
+        <li>100% Genuine Certified Products with Brand Warranty.</li>
+        <li>Lightning fast delivery across thousands of Indian PIN codes.</li>
+        <li>Friendly 24/7 student-centered customer care desk.</li>
+        <li>Convenient Cash on Delivery and simple returns.</li>
+      </ul>
+
+      <div style="background:#f8fafc; border-left:4px solid #2874f0; padding:12px 16px; border-radius:4px;">
+        <strong>Academic Project Note:</strong> Built for Web Programming examination demonstrating clean HTML5, CSS3, Express.js and friendly JavaScript.
+      </div>
+    </div>
+  </main>
+
+  <div id="toastNotification" class="toast-msg"></div>
+  <footer class="site-footer">
+    <p>© 2026 Product Store E-Commerce. Clean, friendly and simple code.</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

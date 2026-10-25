@@ -1,0 +1,80 @@
+/* Friendly, simple, clean CSS for Product Store E-Commerce */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f1f3f6; color: #1e293b; line-height: 1.5; }
+a { color: inherit; text-decoration: none; }
+
+/* Header & Navigation Bar */
+.site-header { background: #2874f0; color: #fff; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.brand-link { font-size: 20px; font-weight: 800; color: #fff; letter-spacing: 0.5px; }
+.search-form { display: flex; flex: 1; max-width: 520px; }
+.search-form input { flex: 1; padding: 9px 14px; border: none; border-radius: 4px 0 0 4px; outline: none; font-size: 14px; }
+.search-form button { padding: 9px 18px; background: #ffe500; border: none; border-radius: 0 4px 4px 0; font-weight: 700; cursor: pointer; color: #1e293b; }
+.nav-links { display: flex; align-items: center; gap: 16px; font-size: 14px; font-weight: 600; }
+.nav-links a:hover { text-decoration: underline; }
+.cart-btn { background: #fb641b; color: #fff; padding: 7px 14px; border-radius: 4px; display: inline-flex; align-items: center; gap: 6px; font-weight: 700; }
+.badge { background: #fff; color: #fb641b; padding: 1px 6px; border-radius: 10px; font-size: 12px; }
+
+/* Page Layout & Headings */
+.page-container { max-width: 1140px; margin: 20px auto; padding: 0 16px; min-height: 70vh; }
+.section-title { font-size: 20px; font-weight: 700; margin: 24px 0 14px; color: #0f172a; display: flex; justify-content: space-between; align-items: center; }
+.hero-banner { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: #fff; border-radius: 8px; padding: 32px 24px; text-align: center; margin-bottom: 24px; }
+.hero-banner h1 { font-size: 26px; margin-bottom: 8px; }
+.hero-banner p { font-size: 15px; opacity: 0.9; margin-bottom: 16px; }
+.btn-hero { background: #ffe500; color: #1e293b; font-weight: 700; padding: 10px 20px; border-radius: 4px; display: inline-block; }
+
+/* Product Cards & Grid */
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.product-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 14px; display: flex; flex-direction: column; cursor: pointer; transition: transform .2s, box-shadow .2s; }
+.product-card:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+.card-image-box { height: 130px; background: #f8fafc; border-radius: 4px; display: flex; align-items: center; justify-content: center; position: relative; font-size: 52px; }
+.discount-tag { position: absolute; top: 8px; right: 8px; background: #388e3c; color: #fff; font-size: 11px; font-weight: 700; padding: 2px 6px; border-radius: 3px; }
+.card-body { padding-top: 10px; display: flex; flex-direction: column; flex: 1; }
+.card-cat { font-size: 11px; color: #64748b; text-transform: uppercase; font-weight: 600; }
+.card-title { font-size: 14px; font-weight: 600; margin: 4px 0; color: #1e293b; }
+.card-rating { font-size: 13px; color: #d97706; font-weight: 700; margin-bottom: 6px; }
+.card-price { margin-top: auto; display: flex; align-items: baseline; gap: 8px; }
+.price-current { font-size: 17px; font-weight: 800; color: #0f172a; }
+.price-old { font-size: 13px; text-decoration: line-through; color: #94a3b8; }
+.btn-add-cart { margin-top: 10px; width: 100%; padding: 8px; background: #fb641b; color: #fff; border: none; border-radius: 4px; font-weight: 700; cursor: pointer; }
+
+/* Filter Pills & Controls */
+.filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; align-items: center; justify-content: space-between; }
+.cat-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.cat-pill-btn { padding: 6px 14px; background: #fff; border: 1px solid #cbd5e1; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600; }
+.cat-pill-btn.active, .cat-pill-btn:hover { background: #2874f0; color: #fff; border-color: #2874f0; }
+
+/* Product Details Page */
+.pdp-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; background: #fff; padding: 24px; border-radius: 8px; border: 1px solid #e2e8f0; }
+.pdp-icon-box { height: 260px; background: #f8fafc; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 96px; }
+.pdp-actions { display: flex; gap: 12px; margin-top: 16px; }
+.btn-pdp-cart, .btn-pdp-buy { flex: 1; padding: 12px; font-size: 14px; font-weight: 700; border: none; border-radius: 4px; cursor: pointer; color: #fff; }
+.btn-pdp-cart { background: #ff9f00; } .btn-pdp-buy { background: #fb641b; }
+.pdp-price { font-size: 24px; font-weight: 800; margin: 12px 0; color: #0f172a; }
+.pdp-desc { font-size: 14px; color: #475569; margin-bottom: 16px; }
+.pdp-pincode { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 16px; }
+.pdp-pincode input { padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 13px; }
+.pdp-pincode button { padding: 8px 16px; background: #2874f0; color: #fff; border: none; border-radius: 4px; font-weight: 700; cursor: pointer; }
+
+/* Shopping Cart */
+.cart-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+.cart-box { background: #fff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 18px; }
+.cart-item-row { display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid #f1f5f9; align-items: center; }
+.cart-icon { font-size: 40px; }
+.cart-info { flex: 1; }
+.cart-stepper { display: flex; gap: 8px; align-items: center; margin-top: 6px; }
+.cart-stepper button { width: 28px; height: 28px; border: 1px solid #cbd5e1; background: #f8fafc; border-radius: 4px; cursor: pointer; font-weight: 700; }
+.btn-remove { margin-left: 12px; color: #ef4444; background: none; border: none; cursor: pointer; font-weight: 600; }
+.summary-line { display: flex; justify-content: space-between; margin: 8px 0; font-size: 14px; }
+.btn-checkout { width: 100%; margin-top: 16px; padding: 12px; background: #fb641b; color: #fff; border: none; border-radius: 4px; font-weight: 700; cursor: pointer; font-size: 15px; }
+
+/* Forms & Dialog Modals */
+.form-card { max-width: 440px; margin: 30px auto; background: #fff; padding: 24px; border-radius: 8px; border: 1px solid #e2e8f0; }
+.form-group { margin-bottom: 14px; }
+.form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.form-group input, .form-group textarea { width: 100%; padding: 9px 12px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 14px; }
+.btn-submit { width: 100%; padding: 10px; background: #2874f0; color: #fff; border: none; border-radius: 4px; font-weight: 700; cursor: pointer; font-size: 14px; }
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: none; align-items: center; justify-content: center; z-index: 100; }
+.modal-box { background: #fff; padding: 24px; border-radius: 8px; width: 90%; max-width: 440px; }
+.toast-msg { position: fixed; bottom: 20px; right: 20px; background: #0f172a; color: #fff; padding: 10px 18px; border-radius: 6px; display: none; z-index: 1000; font-size: 14px; }
+.site-footer { background: #172337; color: #94a3b8; text-align: center; padding: 20px; font-size: 13px; margin-top: 40px; }
+@media (max-width: 768px) { .pdp-layout, .cart-layout { grid-template-columns: 1fr; } }

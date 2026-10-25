@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - Product Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <a href="index.html" class="brand-link">🛍️ Product Store</a>
+    <form class="search-form" onsubmit="handleSearchSubmit(event)">
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <button type="submit">Search</button>
+    </form>
+    <nav class="nav-links">
+      <a href="catalogue.html">Catalogue</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <span id="userAccountSection"><a href="login.html">Login</a></span>
+      <a href="cart.html" class="cart-btn">🛒 Cart <span id="cartBadge" class="badge">0</span></a>
+    </nav>
+  </header>
+
+  <!-- Product Details Section -->
+  <main class="page-container">
+    <div style="margin-bottom:16px; font-size:14px; color:#64748b;">
+      <a href="index.html" style="color:#2874f0;">Home</a> ➜ <a href="catalogue.html" style="color:#2874f0;">Catalogue</a> ➜ <span>Product Details</span>
+    </div>
+
+    <!-- Product Details Injected by JavaScript -->
+    <div id="productDetailContainer"></div>
+  </main>
+
+  <div id="toastNotification" class="toast-msg"></div>
+  <footer class="site-footer">
+    <p>© 2026 Product Store E-Commerce. Clean, friendly and simple code.</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
